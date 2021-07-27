@@ -6,19 +6,19 @@ namespace ClassUsingAutoProperties
     {
         static void Main(string[] args)
         {
-            /*Person person = new Person();
+            Person person = new Person();
             //PrintPerson(person);
 
-            Name = "Андрей";
-            Age = 35;
-            PrintPerson(person);*/
+            person.Name = "Андрей";
+            person.Age = 35;
+            PrintPerson(person);
 
-            Person person = new Person
+            /*Person person = new Person
             {
                 Name = "Андрей",
                 Age = 35
             };
-            PrintPerson(person);
+            PrintPerson(person);*/
 
             var person2 = new Person(person);
             PrintPerson(person2);

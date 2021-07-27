@@ -9,8 +9,8 @@ namespace ClassUsingProperties
             /*Person person = new Person();
             //PrintPerson(person);
 
-            Name = "Андрей";
-            Age = 35;
+            person.Name = "Андрей";
+            person.Age = 35;            
             PrintPerson(person);*/
 
             Person person = new Person
