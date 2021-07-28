@@ -1,4 +1,8 @@
-﻿using System;
+﻿/*Создать классы: Учитель, Ученик, работник школы
+В классах должна содержаться информация о человеке (ФИО, дата рождения), и 
+специфическая информация о каждой группе.*/
+
+using System;
 
 namespace ClassUsingAutoProperties
 {
@@ -6,19 +10,19 @@ namespace ClassUsingAutoProperties
     {
         static void Main(string[] args)
         {
-            Person person = new Person();
+            /*Person person = new Person();
             //PrintPerson(person);
 
             person.Name = "Андрей";
             person.Age = 35;
-            PrintPerson(person);
+            PrintPerson(person);*/
 
-            /*Person person = new Person
+            Person person = new Person
             {
                 Name = "Андрей",
                 Age = 35
             };
-            PrintPerson(person);*/
+            PrintPerson(person);
 
             var person2 = new Person(person);
             PrintPerson(person2);
@@ -26,13 +30,39 @@ namespace ClassUsingAutoProperties
             /*Student student = new Student();
             student.Person = person;
             student.Faculty = "SoftDev";*/
+            Person person3 = new Person
+            {
+                Name = "Alex",
+                Age = 39
+            };
+            Person person4 = new Person
+            {
+                Name = "Елена",
+                Age = 46
+            };
 
             var student = new Student
             {
-                Person = person,
+                Person3 = person3,
                 Faculty = "SoftDev"
             };
-            PrintStudent(student);
+            PrintStudent(student, person3);
+
+            var teacher = new Teacher
+            {
+                Person = person,
+                Faculty = "Information technologies",
+                Experience = 20
+            };
+            PrintTeacher(teacher, person);
+
+            var schoolEmployee = new SchoolEmployee
+            {
+                Person4 = person4,
+                Profession = "Завуч",
+                Experience = 18
+            };
+            PrintSchoolEmployee(schoolEmployee, person4);
 
             static void PrintPerson(Person person)
             {
@@ -41,10 +71,24 @@ namespace ClassUsingAutoProperties
                 Console.ResetColor();
             }
 
-            static void PrintStudent(Student student)
+            static void PrintStudent(Student student, Person person3)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine($"{student.Person}, {student.Faculty}");
+                Console.WriteLine($"{person3.Name}, {person3.Age}, {student.Faculty}");                
+                Console.ResetColor(); 
+            }
+
+            static void PrintTeacher(Teacher teacher, Person person)
+            {
+                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.WriteLine($"{person.Name}, {person.Age}, {teacher.Experience}, {teacher.Faculty}");
+                Console.ResetColor();
+            }
+
+            static void PrintSchoolEmployee(SchoolEmployee schoolEmployee, Person person4)
+            {
+                Console.ForegroundColor = ConsoleColor.DarkGreen;
+                Console.WriteLine($"{person4.Name}, {person4.Age} лет, {schoolEmployee.Profession}, {schoolEmployee.Experience} лет");
                 Console.ResetColor();
             }
         }
