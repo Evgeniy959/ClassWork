@@ -13,11 +13,11 @@ namespace ClassUsingAutoProperties
 
         public Person() { }
 
-        public Person(string name, int age)
+        /*public Person(string name, int age)
         {
             Name = name;
             Age = age;
-        }
+        }*/
 
         public Person(Person person)
         {

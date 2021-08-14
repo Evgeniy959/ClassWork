@@ -9,8 +9,8 @@ namespace СreatingСlassGetSet
             Person person = new Person();
             //PrintPerson(person);
 
-            Name = "Андрей";
-            GetAge = 35;
+            person.SetName("Андрей");
+            person.SetAge(35);
             PrintPerson(person);
 
             /*Person person = new Person
@@ -19,7 +19,7 @@ namespace СreatingСlassGetSet
                 person.GetAge() = 35;
                 //_age = 35
             };*/
-            PrintPerson(person);
+            //PrintPerson(person);
 
             var person2 = new Person(person);
             PrintPerson(person2);
