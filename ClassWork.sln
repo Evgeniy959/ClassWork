@@ -9,9 +9,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "СreatingСlass", "Сreatin
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "СreatingСlassGetSet", "СreatingСlassGetSet\СreatingСlassGetSet.csproj", "{9E2DC371-E177-4EB5-B614-06944FCA5DC1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassUsingProperties", "ClassUsingProperties\ClassUsingProperties.csproj", "{44DAF84D-9F73-4BAB-8A51-426BE46E0B14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassUsingProperties", "ClassUsingProperties\ClassUsingProperties.csproj", "{44DAF84D-9F73-4BAB-8A51-426BE46E0B14}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassUsingAutoProperties", "ClassUsingAutoProperties\ClassUsingAutoProperties.csproj", "{EEB87D0F-693D-455E-B04F-8D1AB3858456}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassUsingAutoProperties", "ClassUsingAutoProperties\ClassUsingAutoProperties.csproj", "{EEB87D0F-693D-455E-B04F-8D1AB3858456}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EditorApp", "EditorApp\EditorApp.csproj", "{74EB0BBC-83CD-460B-9A63-B2F785902573}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EditorLib", "EditorLib\EditorLib.csproj", "{24075441-C11B-4D84-8794-4A10A678A720}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EditorConsole", "EditorConsole\EditorConsole.csproj", "{52CFD3E1-1D17-4ABD-95B8-310ACB9CD386}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +45,18 @@ Global
 		{EEB87D0F-693D-455E-B04F-8D1AB3858456}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EEB87D0F-693D-455E-B04F-8D1AB3858456}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EEB87D0F-693D-455E-B04F-8D1AB3858456}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74EB0BBC-83CD-460B-9A63-B2F785902573}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74EB0BBC-83CD-460B-9A63-B2F785902573}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74EB0BBC-83CD-460B-9A63-B2F785902573}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74EB0BBC-83CD-460B-9A63-B2F785902573}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24075441-C11B-4D84-8794-4A10A678A720}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24075441-C11B-4D84-8794-4A10A678A720}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24075441-C11B-4D84-8794-4A10A678A720}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24075441-C11B-4D84-8794-4A10A678A720}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52CFD3E1-1D17-4ABD-95B8-310ACB9CD386}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52CFD3E1-1D17-4ABD-95B8-310ACB9CD386}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52CFD3E1-1D17-4ABD-95B8-310ACB9CD386}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52CFD3E1-1D17-4ABD-95B8-310ACB9CD386}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
